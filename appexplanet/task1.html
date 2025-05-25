@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Simple Webpage</title>
+    <style>
+      body {
+        font-family: "Courier New", "Courier", " monospace";
+        background-color: rgb(243, 192, 255);
+      }
+      h1 {
+        color: blue;
+        align-items: center;
+        text-align: center;
+        font-size: 40px;
+      }
+      p {
+        color: red;
+        text-align: center;
+      }
+      img {
+        border-radius: 8px;
+        width: 40%;
+        margin-top: 70px;
+        margin-left: 30%;
+      }
+      #details {
+        padding: 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        margin: 10px;
+      }
+      button {
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      #catForm {
+        margin-left: 50px;
+        border-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>WELCOME TO MY SAMPLE WEBPAGE</h1>
+      <p>
+        This a basic webpage created with HTML,styled with CSS,and made
+        interactive with JavaScript
+      </p>
+    </div>
+    <div>
+      <img src="./cat.jpg" alt="cat image" />
+      <button onclick="alertBox()" target="_blank">Click Me</button>
+
+      <details id="details">
+        <summary>
+          This web page is dedicated to the fascinating world of cats (Felis
+          catus), small carnivorous mammals that have been cherished companions
+          to humans for thousands of years. Known for their agility, sharp
+          retractable claws, and extraordinary senses. cats are expert hunters
+          with exceptional night vision and acute hearing. Despite their
+          independent nature, they often form deep bonds with humans, expressing
+          affection through purring, head-butting, and playful interactions.
+          Cats are meticulous groomers, using their rough tongues to keep their
+          coats clean and healthy. As obligate carnivores, they require a diet
+          rich in animal-based nutrients such as taurine. Their communication
+          includes a mix of meows, purrs, body language, and scent marking. With
+          a wide range of breeds—such as the elegant Persian, the vocal Siamese,
+          and the sociable Maine Coon—cats offer a variety of looks and
+          temperaments, making them one of the most diverse and popular
+          pets in the world.
+        </summary>
+      </details>
+      <p>
+        Visit<a href="https://en.wikipedia.org/wiki/Cat">cat website</a>for more
+        information
+      </p>
+    </div>
+    <div id="catForm">
+      <h2>Cat Form</h2>
+      <form>
+        <fieldset>
+          <legend>Is your cat an indoor or outdoor cat?</legend>
+          <label><input type="radio" checked /> Indoor</label>
+          <label><input type="radio" /> Outdoor</label>
+        </fieldset>
+        <fieldset>
+          <legend>What's your cat's personality?</legend>
+          <input type="checkbox" checked />
+          <label for="loving">Loving</label>
+          <input type="checkbox" />
+          <label for="lazy">Lazy</label>
+          <input type="checkbox" value="energetic" />
+          <label for="energetic">Energetic</label>
+        </fieldset>
+      </form>
+      <button type="submit">submit</button>
+      <h2>Cat Photos</h2>
+      <p>
+        Everyone loves
+        <a href="https://pixabay.com/images/search/cute%20cat/">cute cats</a>
+        online!
+      </p>
+      <p>
+        See more
+        <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in
+        our gallery.
+      </p>
+    </div>
+
+    <script>
+      function alertBox() {
+        alert("hello, for more information about cats visit cat Website");
+      }
+    </script>
+  </body>
+</html>
